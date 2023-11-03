@@ -77,7 +77,7 @@ export default function Menus({ videoRefs }: { videoRefs: any }) {
                   transform="translate(24 24)"
                   clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                 >
-                  <video
+                  {/* <video
                     ref={(element) => {
                       if (element) {
                         videoRefs.current[index + 1] = element;
@@ -89,7 +89,7 @@ export default function Menus({ videoRefs }: { videoRefs: any }) {
                     autoPlay={true}
                     muted>
                     <source src={item.src} type="video/mp4" />
-                  </video>
+                  </video> */}
                 </foreignObject>
               </svg>
             </div>
