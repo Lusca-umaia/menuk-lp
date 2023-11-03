@@ -8,9 +8,9 @@ import {
 } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Cardápio', href: 'menu' },
+  { name: 'Cardápios', href: 'menu' },
   { name: 'Funcionalidades', href: 'functionalities' },
-  { name: 'Como funciona?', href: 'how_it_works' },
+  { name: 'Como funciona?', href: 'operation' },
   { name: 'FAQ', href: 'faq' },
 ]
 
@@ -62,7 +62,7 @@ export default function Header() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             <button
               type="button"
-              className="rounded-md bg-[var(--primary-color)] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary-color)]"
+              className="rounded-md bg-primary-menuk px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-menuk"
             >
               Contratar
             </button>

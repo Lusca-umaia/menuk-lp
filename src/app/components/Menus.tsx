@@ -9,7 +9,8 @@ const screenshots = [
   }
 ]
 
-export default function Menus() {
+export default function Menus({ videoRefs }: { videoRefs: any }) {
+
   return (
     <div className="relative">
       <svg
@@ -39,9 +40,9 @@ export default function Menus() {
       <div className="pb-14" id='menu'>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl mx-auto max-w-7xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 className="text-4xl mx-auto max-w-7xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               Cardápios feitos com Menuk
-            </h1>
+            </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Possuimos 2 modelos de cardápio
             </p>
@@ -49,7 +50,7 @@ export default function Menus() {
         </div>
       </div>
       <div className='flex justify-center max-sm:gap-24 gap-32 max-sm:flex-wrap px-12'>
-        {screenshots.map((item) => (
+        {screenshots.map((item, index) => (
           <div className='flex flex-col items-center gap-2' key={item.src}>
             <p className="text-lg font-semibold leading-7 text-gray-900">
               Modelo - {item.title}
@@ -72,10 +73,21 @@ export default function Menus() {
                 <foreignObject
                   width={316}
                   height={684}
+                  className="flex justify-center items-center"
                   transform="translate(24 24)"
                   clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
                 >
-                  <video className="w-full h-full rounded-lg shadow-lg" playsInline loop autoPlay={true} muted>
+                  <video
+                    ref={(element) => {
+                      if (element) {
+                        videoRefs.current[index + 1] = element;
+                      }
+                    }}
+                    className="w-full h-full rounded-lg shadow-lg"
+                    playsInline
+                    loop
+                    autoPlay={true}
+                    muted>
                     <source src={item.src} type="video/mp4" />
                   </video>
                 </foreignObject>

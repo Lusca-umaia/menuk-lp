@@ -4,7 +4,6 @@
 
 @import "tailwindcss/utilities";
 
-
 :root {
   --primary-color: #F85601;
   --secondary-color: #455D7F;
@@ -16,72 +15,4 @@ body {
   scroll-behavior: smooth;
   background-color: rgb(243 244 246);
   min-height: 100%;
-}
-
-.scrollStyle::-webkit-scrollbar {
-  height: 3px;
-}
-
-.scrollStyle::-webkit-scrollbar-thumb:hover {
-  background: #eaeaea;
-}
-
-.scrollStyle {
-  scrollbar-width: thin;
-  scrollbar-color: #eaeaea transparent;
-}
-
-.scrollStyle::-webkit-scrollbar-thumb {
-  background: #eaeaea;
-}
-
-.scrollStyle::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scrollStyleSecondary::-webkit-scrollbar {
-  height: 3px;
-  width: 8px;
-}
-
-.scrollStyleSecondary::-webkit-scrollbar-thumb:hover {
-  background: #eaeaea;
-}
-
-.scrollStyleSecondary {
-  scrollbar-width: thin;
-  scrollbar-color: #eaeaea transparent;
-}
-
-.scrollStyleSecondary::-webkit-scrollbar-thumb {
-  background: #DADADA;
-  border-radius: 5px;
-}
-
-.scrollStyleSecondary::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.max-w-44 {
-  max-width: 10.45rem;
-}
-
-.min-w-44 {
-  min-width: 10.45rem;
-}
-
-.inherit {
-  display: inherit;
-}
-
-.bg-primary {
-  background-color: var(--primary-color);
-}
-
-.border-primary {
-  border-color: var(--primary-color);
-}
-
-.text-primary {
-  color: var(--primary-color);
 }

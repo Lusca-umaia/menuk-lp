@@ -42,7 +42,7 @@ export default function Plans() {
     <div className="relative isolate bg-white px-6 pt-24 sm:pt-32 lg:px-8">
       <div className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
         <div
-          className="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[var(--primary-color)] to-[var(--primary-color)] opacity-30"
+          className="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-primary-menuk to-primary-menuk opacity-30"
           style={{
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -71,7 +71,7 @@ export default function Plans() {
               'rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10'
             )}
           >
-            <h3 id={tier.id} className="text-base font-semibold leading-7 text-[var(--primary-color)]">
+            <h3 id={tier.id} className="text-base font-semibold leading-7 text-primary-menuk">
               {tier.name}
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
@@ -82,7 +82,7 @@ export default function Plans() {
             <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10">
               {tier.features.map((feature) => (
                 <li key={feature} className="flex gap-x-3">
-                  <CheckIcon className="h-6 w-5 flex-none text-[var(--primary-color)]" aria-hidden="true" />
+                  <CheckIcon className="h-6 w-5 flex-none text-primary-menuk" aria-hidden="true" />
                   {feature}
                 </li>
               ))}
@@ -92,9 +92,9 @@ export default function Plans() {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? 'bg-[var(--primary-color)] text-white shadow hover:opacity-80'
-                  : 'text-[var(--primary-color)] ring-1 ring-inset ring-[var(--primary-color)] hover:ring-[var(--primary-color)]',
-                'mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary-color)] sm:mt-10'
+                  ? 'bg-primary-menuk text-white shadow hover:opacity-80'
+                  : 'text-primary-menuk ring-1 ring-inset ring-primary-menuk hover:ring-primary-menuk',
+                'mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-menuk sm:mt-10'
               )}
             >
               Contratar Plano
